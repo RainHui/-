@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mainInterface/mainInterface",
+    "pages/userInterface/userInterface",
+    "pages/test/test"
+  ],
+    "permission": {
+      "scope.userLocation": {
+        "desc": "位置用于检测设备" 
+      }
+    },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/mainInterface/mainInterface",
+        "text": "主页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home1.png"
+      },
+      {
+        "pagePath": "pages/userInterface/userInterface",
+        "text": "用户",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

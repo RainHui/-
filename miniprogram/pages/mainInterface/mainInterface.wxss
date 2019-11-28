@@ -1,0 +1,143 @@
+/* pages2/pages/mainInterface/mainInterface.wxss */
+.container{
+  display: grid;
+  grid-template-columns: 50rpx 300rpx 100rpx 100rpx 50rpx 30rpx ;
+}
+
+.tesTitle{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;  
+}
+
+.firstTitle{
+  font-size: 65rpx;
+  color: #273c75;
+  font-weight: bold;
+}
+
+.translator{
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;  
+}
+
+
+
+#myMap{
+  margin: 0 auto;
+  margin-top: 4%;
+}
+
+
+.test1{
+    grid-column-start: 7;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.tesTitle2{
+    margin-left: 7%;
+    margin-top: 5%;
+}
+
+.secondTitle{
+  font-size: 35rpx;
+  color: #273c75;
+  font-weight: bold;  
+}
+
+.container_1{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 10;
+    grid-row-end: 10;  
+}
+
+.container1{
+  display: grid;
+  grid-template-columns:10rpx 110rpx 175rpx 275rpx 50rpx 20rpx ;
+  grid-template-rows: 60rpx 28rpx 60rpx ;  
+  border-radius: 20rpx;
+  width: 86%;
+  height: 100%;
+  background-color: #f5f6fa;
+  margin: 0 auto;
+  margin-top: 4%;
+  box-shadow: 6rpx 6rpx 6rpx 6rpx #dcdde1;
+}
+
+.container2{
+  display: grid;
+  grid-template-columns:10rpx 110rpx 175rpx 275rpx 50rpx 20rpx ;
+  grid-template-rows: 60rpx 28rpx 60rpx ;  
+  border-radius: 20rpx;
+  width: 86%;
+  height: 100%;
+  background-color: #f5f6fa;
+  margin: 0 auto;
+  margin-top: 8rpx;  
+  box-shadow: 6rpx 6rpx 6rpx 6rpx #dcdde1;
+}
+
+.facility{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1; 
+    margin-left: 30rpx;   
+    font-size: 32rpx;
+}
+
+
+.pression{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;  
+    margin-left: 10rpx;   
+    font-size: 32rpx;
+}
+
+.status{
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;  
+    margin-left: -25rpx;   
+    font-size: 32rpx;
+}
+
+.fire{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;   
+}
+
+.wrench{
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;  
+}
+
+.queryPastStatistics{
+  font-weight: 5rpx;
+  font-size: 29rpx;
+  
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;   
+}
+
+.search{
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;  
+}

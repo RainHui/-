@@ -1,0 +1,48 @@
+<!--pages2/pages/mainInterface/mainInterface.wxml-->
+<view class="container">
+  <view class="tesTitle"><text class="firstTitle">智控消防</text></view>
+  
+  <view class="translator" bindtap="translateWord">
+    <image style="width: 20px; height: 20px; " mode="scaleToFill" src="{{imageSrc}}"></image>
+  </view>
+    <view class="test1" wx:if="{{type=='cn'}}">cn</view>
+    <view class="test1" wx:if="{{type=='en'}}">en</view>
+</view>
+  <view class="map">
+      <map id="myMap"
+      longitude="{{myLongitude}}" 
+      latitude="{{myLatitude}}"
+      scale='16'
+      accuracy="{{accuracy}}"
+      subkey="AVABZ-EIPWP-7RTDK-L6UQ3-SHYET-V5B6V"
+      polyline="{{polyline}}"
+      markers="{{markers}}"
+      bindmarkertap="markertap" 
+      polyline="{{polyline}}" 
+      bindreginchange="regionchange" 
+      show-location style="width: 85%; height: 280px;">
+      </map>
+  </view>
+  <view class="tesTitle2">
+    <text class="secondTitle">实时数据</text>
+  </view>
+    <view class="container1">
+      <text class="facility">设备:</text>
+      <text class="pression">压力:</text>
+      <text class="status">状态:</text>
+      <image style="width: 33px; height: 33px; " mode="scaleToFill" src="{{imageFire}}" class="fire"></image>
+      <text class="queryPastStatistics" bindtap="{{}}">查询过往数据</text>
+      <image style="width: 30px; height: 30px; " mode="scaleToFill" src="{{imageSearch}}" class="search"></image>
+      <image style="width: 33px; height: 33px; " mode="scaleToFill" src="{{imageWrench}}" class="wrench"></image>
+    </view>
+
+  <view class="container2">
+      <text class="facility">设备:</text>
+      <text class="pression">压力:</text>
+      <text class="status">状态:</text>
+      <image style="width: 33px; height: 33px; " mode="scaleToFill" src="{{imageFire}}" class="fire"></image>
+      <text class="queryPastStatistics" bindtap="{{}}">查询过往数据</text>
+      <image style="width: 30px; height: 30px; " mode="scaleToFill" src="{{imageSearch}}" class="search"></image>
+      <image style="width: 33px; height: 33px; " mode="scaleToFill" src="{{imageWrench}}" class="wrench"></image>
+  </view>
+

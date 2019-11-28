@@ -1,0 +1,59 @@
+<!--pages2/pages/userInterface/userInterface.wxml-->
+<!--pages/log_User/log_User.wxml  这里是用户登入界面-->
+
+  <view class='background' mode="aspectFill"></view>
+
+  <view class="header">
+    <view class="header-logo"></view>
+    <view class="header-text">消防监控系统登录</view>
+  </view> 
+<view class="test">
+  <view class="test-1">
+    Email:
+  </view>
+</view>
+
+
+<view class="text-con">
+  <view class="weui-cell weui-cell_input">
+              <input class="weui-input" bindinput="email" type='text' />
+  </view>
+</view>
+
+<view class="test-2">
+  <view class="test-1">
+    Passward:
+  </view>
+</view>
+
+  <view class="weui-cell weui-cell_input">
+                <input class="weui-input" bindinput="passward" password type="text" auto-focus/>
+  </view>
+
+<view class="position_con">  
+  <view class="con_Button">
+    <button class="log">登入</button>
+  </view>
+   <text class="sign-inMessage" bindtap="modalinput">没有管理员信息？点我注册</text>
+</view>
+<form bindsubmit='formSubmit'>
+  <modal class="modal" hidden="{{hiddenmodalput}}" title="注册" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+    <view class="sign_container">
+      <view class="sign_email"></view>
+      <input  placeholder-class="placeholder_color" placeholder="邮箱" class="sign_email_text" type='text' bindinput="signEmailGetWord" value='{{signEmail}}' auto-focus/>
+    </view>
+
+    <view class="sign_container">
+      <view class="sign_phone">
+      </view>
+      <input  placeholder-class="placeholder_color" placeholder="手机" class="sign_phone_number"  type='number' bindinput="signPhoneGetPhone" value='{{phone}}' auto-focus/>
+    </view>
+
+    <view class="sign_container">
+      <view class="sign_code" >
+      </view>
+      <input placeholder-class="placeholder_color" placeholder="验证码" class="sign_code_number" type="number" bindinput="signPhoneGetcode" value='{{code}}' auto-focus/>
+      <button class="sign_but_number" bindtap="sendMessageToPhone">获取验证码</button>
+    </view>
+  </modal>
+</form>

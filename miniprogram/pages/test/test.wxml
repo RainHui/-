@@ -1,0 +1,8 @@
+  <swiper class="swiper-block" previous - margin="90rpx" next - margin="90rpx" current = "0" indicator - dots="true" autoplay = "true" interval = "2000" duration = "500" bindchange = "swiperChange">
+    <block wx: for="{{banner}}" wx: index="{{index}}">
+      <swiper-item class="swiper-item">
+        <image mode="aspectFill" src="{{item.imgUrl}}" class="slide-image {{swiperIndex == index ? 'active' : ''}}" />
+      //src这里要注意一下后台对图片地址的关键键名是什么                            
+      </swiper-item>
+    </block>
+  </swiper>

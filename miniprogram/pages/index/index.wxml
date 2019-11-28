@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+<view class="userinfo">
+  <view class="userinfo-avatar">
+    <open-data  type="userAvatarUrl"></open-data>
+  </view>
+    <open-data type="userNickName"></open-data>
+</view>
+
+  <view class="welcome-text" >
+      <text class="w-te1">Welcome Back!</text> 
+  </view>
+</view>
+<view class="svg1">
+  <view class="org-svg"></view>
+  <view class="red-svg"></view>
+  <view class="blu-svg"></view>
+
+  <view class="org1-svg"></view>
+  <view class="red1-svg"></view>
+  <view class="blu1-svg"></view>  
+</view>
+
+
+

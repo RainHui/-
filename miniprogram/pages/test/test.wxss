@@ -1,0 +1,28 @@
+.swiper-block {
+  height: 480rpx;
+  width: 100%;
+  background-color: #b36969;
+}
+ 
+.swiper-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: unset;
+}
+ 
+.slide-image {
+  height: 420rpx;
+  width: 520rpx;
+  border-radius: 9rpx;
+  box-shadow: 0px 0px 30rpx rgba(138, 69, 69, 1);
+  margin: 0rpx 10rpx;
+  z-index: 1;
+}
+ 
+.active {
+  transform: scale(1.14);
+  transition: all 0.2s ease-in 0s;
+  z-index: 20;
+}
